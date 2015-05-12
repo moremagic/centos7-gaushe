@@ -7,7 +7,7 @@ RUN echo 'root:root' | chpasswd
 RUN /usr/sbin/sshd-keygen
 
 #emacs, etc install
-RUN yum -y install emacs wget curl tar
+RUN yum -y install emacs vim wget curl tar
 ADD resource/emacs/init.el /root/.emacs.d/
 
 #gaushe install
